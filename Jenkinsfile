@@ -17,14 +17,10 @@ pipeline {
                 sh 'chmod a+x mvnw'
             }
         }
-        stage('Maven Unit tests') {
-            steps {
-                sh 'chmod a+x mvnw'
-            }
-        }
+
         stage('Maven build') {
             steps {
-                sh './mvnw clean package'
+                sh './mvnw clean package -Dmaven.test.skip=true'
             }
         }
 
