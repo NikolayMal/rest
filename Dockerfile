@@ -1,6 +1,6 @@
 From amazoncorretto:17
 
-ADD target/payments-0.0.1-SNAPSHOT.jar app.jar
+ADD target/rest-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
